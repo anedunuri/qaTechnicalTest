@@ -1,0 +1,70 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 44,
+        "name": "Add and remove song from the playlist",
+        "description": "",
+        "id": "daily-video-api;add-and-remove-song-from-the-playlist",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 53574767,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "Create another playlist",
+            "match": {
+              "location": "DailySongAPI.CreateNewPlayList()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 113944935,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "Add another video to the new playlist",
+            "match": {
+              "location": "DailySongAPI.AddvideotoPL()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 49827873,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "Delete the video added from the playlist",
+            "match": {
+              "location": "DailySongAPI.RemovevideoFromPL()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 43,
+            "name": "@PatchPlaylist"
+          }
+        ]
+      }
+    ],
+    "name": "Daily Video API",
+    "description": "",
+    "id": "daily-video-api",
+    "keyword": "Feature",
+    "uri": "DailySong.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@DailyVideo"
+      }
+    ]
+  }
+]

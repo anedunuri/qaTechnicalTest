@@ -1,0 +1,93 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 35,
+        "name": "Create a playlist",
+        "description": "",
+        "id": "daily-video-api;create-a-playlist",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1908956675,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "Create a new playlist",
+            "match": {
+              "location": "DailySongAPI.NewPlayList()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5944646,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "Check playlist POST response code",
+            "match": {
+              "location": "DailySongAPI.CheckPlStatus()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3074346,
+              "error_message": "java.lang.AssertionError: \nExpected: \"Top 40 playlist.\"\n     but: was \"My first playlist\"\r\n\tat org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)\r\n\tat org.junit.Assert.assertThat(Assert.java:956)\r\n\tat org.junit.Assert.assertThat(Assert.java:923)\r\n\tat definitions.DailySongAPI.CheckDesc(DailySongAPI.java:418)\r\n\tat ✽.And Check playlist POST Desc(DailySong.feature:38)\r\n",
+              "status": "failed"
+            },
+            "line": 38,
+            "name": "Check playlist POST Desc",
+            "match": {
+              "location": "DailySongAPI.CheckDesc()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 39,
+            "name": "Check playlist POST title",
+            "match": {
+              "location": "DailySongAPI.CheckTitle()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 40,
+            "name": "Check playlist POST videos",
+            "match": {
+              "location": "DailySongAPI.CheckVideos()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 34,
+            "name": "@CreatePlaylist"
+          }
+        ]
+      }
+    ],
+    "name": "Daily Video API",
+    "description": "",
+    "id": "daily-video-api",
+    "keyword": "Feature",
+    "uri": "DailySong.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@DailyVideo"
+      }
+    ]
+  }
+]

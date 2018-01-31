@@ -1,0 +1,94 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 21,
+        "name": "Create a video",
+        "description": "",
+        "id": "daily-video-api;create-a-video",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 53553868,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Post new video to the API",
+            "match": {
+              "location": "DailySongAPI.PostVideo()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 148949,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Check video POST response code",
+            "match": {
+              "location": "DailySongAPI.CheckPostStatus()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 154268,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "Check POST video title from API",
+            "match": {
+              "location": "DailySongAPI.CheckPostTitle()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 202905,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "Check POST artist from API",
+            "match": {
+              "location": "DailySongAPI.CheckPostArtist()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 136789,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "Check POST publish date from API",
+            "match": {
+              "location": "DailySongAPI.CheckPostDate()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 20,
+            "name": "@CreateVideo"
+          }
+        ]
+      }
+    ],
+    "name": "Daily Video API",
+    "description": "",
+    "id": "daily-video-api",
+    "keyword": "Feature",
+    "uri": "DailySong.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@DailyVideo"
+      }
+    ]
+  }
+]

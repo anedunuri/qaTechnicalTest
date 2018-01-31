@@ -1,0 +1,118 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "Return a list of videos",
+        "description": "",
+        "id": "daily-video-api;return-a-list-of-videos",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1906973228,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Add videos to the database",
+            "match": {
+              "location": "DailySongAPI.PostNewVideo()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 76276132,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Get all videos",
+            "match": {
+              "location": "DailySongAPI.retrieveVideo()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11972125,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Check video GET response code",
+            "match": {
+              "location": "DailySongAPI.CheckGETvideoStatus()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 266740,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Check GET video title from API",
+            "match": {
+              "location": "DailySongAPI.CheckGETvideoTitle()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 213923,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Check GET artist from API",
+            "match": {
+              "location": "DailySongAPI.CheckGETvideoArtist()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1384994,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Check GET publish date from API",
+            "match": {
+              "location": "DailySongAPI.CheckGETvideoDate()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 47834546,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Return data about single video by ID",
+            "match": {
+              "location": "DailySongAPI.videoGetCall()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@ReturnVideo"
+          }
+        ]
+      }
+    ],
+    "name": "Daily Video API",
+    "description": "",
+    "id": "daily-video-api",
+    "keyword": "Feature",
+    "uri": "DailySong.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@DailyVideo"
+      }
+    ]
+  }
+]

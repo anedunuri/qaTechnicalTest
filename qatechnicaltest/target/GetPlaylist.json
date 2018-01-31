@@ -1,0 +1,82 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 51,
+        "name": "Return a single playlist",
+        "description": "",
+        "id": "daily-video-api;return-a-single-playlist",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 74232649,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "Get all playlists",
+            "match": {
+              "location": "DailySongAPI.GetPlaylist()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 173266,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "Check playlist GET response code",
+            "match": {
+              "location": "DailySongAPI.CheckGetApiResponse()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 49798995,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "Return data about single playlist by ID",
+            "match": {
+              "location": "DailySongAPI.PlayListGetCallByID()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 158448,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "Check GET playlist by ID response code",
+            "match": {
+              "location": "DailySongAPI.CheckAPIResponse()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 50,
+            "name": "@GetPlaylist"
+          }
+        ]
+      }
+    ],
+    "name": "Daily Video API",
+    "description": "",
+    "id": "daily-video-api",
+    "keyword": "Feature",
+    "uri": "DailySong.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@DailyVideo"
+      }
+    ]
+  }
+]

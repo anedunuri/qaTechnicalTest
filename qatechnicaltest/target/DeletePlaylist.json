@@ -1,0 +1,46 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 59,
+        "name": "Delete a playlist",
+        "description": "",
+        "id": "daily-video-api;delete-a-playlist",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 151159671,
+              "status": "passed"
+            },
+            "line": 60,
+            "name": "Delete an existing playlist by ID",
+            "match": {
+              "location": "DailySongAPI.GetPlaylisttoDelete()"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 58,
+            "name": "@DeletePlaylist"
+          }
+        ]
+      }
+    ],
+    "name": "Daily Video API",
+    "description": "",
+    "id": "daily-video-api",
+    "keyword": "Feature",
+    "uri": "DailySong.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@DailyVideo"
+      }
+    ]
+  }
+]

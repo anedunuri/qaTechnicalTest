@@ -1,0 +1,46 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 30,
+        "name": "Delete a video",
+        "description": "",
+        "id": "daily-video-api;delete-a-video",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2581283010,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "Delete an existing video",
+            "match": {
+              "location": "DailySongAPI.DeleteVideo()"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 29,
+            "name": "@DeleteVideo"
+          }
+        ]
+      }
+    ],
+    "name": "Daily Video API",
+    "description": "",
+    "id": "daily-video-api",
+    "keyword": "Feature",
+    "uri": "DailySong.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@DailyVideo"
+      }
+    ]
+  }
+]
